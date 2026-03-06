@@ -1,55 +1,69 @@
-Fake News Detection using Machine Learning
-📌 Project Overview
+# 📰 Fake News Detection using Machine Learning
 
-Fake News Detection is a machine learning project that identifies whether a news article is real or fake based on its textual content. The model analyzes the news text and predicts its authenticity using natural language processing and classification algorithms.
+## 📌 Project Description
+This project detects whether a news article is Fake or Real using a Machine Learning model. The system uses Natural Language Processing (NLP) techniques to analyze the textual content of news articles and classify them.
 
-The main objective of this project is to help reduce the spread of misinformation on the internet by automatically detecting fake news.
+The model is trained using a dataset of real and fake news articles and uses TF-IDF vectorization and a Support Vector Machine (SVM) classifier for prediction.
 
-🎯 Objectives
+## 🎯 Project Objective
+The objective of this project is to build a system that can automatically detect fake news and help reduce the spread of misinformation on the internet.
 
-To build a machine learning model that can classify news as Real or Fake
+## 🛠 Technologies Used
+- Python
+- Machine Learning
+- Natural Language Processing (NLP)
+- Scikit-learn
+- Pandas
+- NumPy
+- Pickle
 
-To preprocess and analyze textual news data
+## 📂 Project Structure
 
-To apply Natural Language Processing (NLP) techniques
+FakeNewsDetection
 
-To train and test the model using a labeled dataset
+│
+├── app.py                     # Main application file
+├── fake_news_svm_model.pkl    # Trained SVM machine learning model
+├── tfidf_vectorizer.pkl       # TF-IDF vectorizer used for text processing
+├── requirements.txt           # Required Python libraries
+└── README.md                  # Project documentation
 
-🛠 Technologies Used
 
-Python
+## ⚙️ How the System Works
 
-Machine Learning
+1. The user inputs a news article or text.
+2. The text is preprocessed and converted into numerical features using TF-IDF Vectorization.
+3. The trained SVM model analyzes the features.
+4. The model predicts whether the news is Fake or Real.
 
-Natural Language Processing (NLP)
+## 🚀 How to Run the Project
 
-Scikit-learn
+1. Clone the repository
 
-Pandas
+git clone https://github.com/Pratheek-16/FakeNewsDetection.git
 
-NumPy
+2. Navigate to the project folder
 
-Jupyter Notebook / Python Script
+cd FakeNewsDetection
 
-⚙️ Methodology
+3. Install the required libraries
 
-Data Collection – Dataset containing real and fake news articles
+pip install -r requirements.txt
 
-Data Preprocessing – Cleaning text, removing stop words, and tokenization
+4. Run the application
 
-Feature Extraction – Converting text into numerical form using techniques like TF-IDF
+python app.py
 
-Model Training – Training machine learning models such as Logistic Regression / Naive Bayes
+## 📊 Features
+- Detects fake news using machine learning
+- Uses TF-IDF for text feature extraction
+- Uses Support Vector Machine (SVM) for classification
+- Simple and efficient model for text analysis
 
-Model Evaluation – Testing the accuracy of the model on unseen data
+## 🔮 Future Improvements
+- Improve model accuracy using deep learning models
+- Build a web interface for user interaction
+- Deploy the project as a web application
 
-📊 Features
-
-Detects fake news based on textual content
-
-Uses machine learning classification algorithms
-
-Performs automatic text preprocessing
-
-Predicts whether a news article is Fake or Real
-
+## 👨‍💻 Author
+Sree Pratheek
